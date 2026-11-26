@@ -5,15 +5,8 @@ from distance import euclidean_distance
 #    Return a "list of lists of the point indexes, list[list[int]]" of the K nearest neighbors, in order (starting from closest).
 
 def naive_knn(query_array: list[list[float]], dataset: list[list[float]], k=10) -> list[list[int]]:
-  """Naive K-nearest neighbors implementation."""
-  results = []
-  for query in query_array:
-    dist = []
-    for i, vector in enumerate(dataset):
-      dist.append((euclidean_distance(query, vector), i))
-    dist.sort(reverse=False)
-    results.append([x[1] for x in dist[:min(k, len(dataset))]])
-  return results
+    """Naive K-nearest neighbors implementation."""
+    pass
 
 dataset = [
      [10, 11, 12],

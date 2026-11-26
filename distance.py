@@ -1,5 +1,3 @@
-from math import sqrt
-
 # 1) Write a function that computes the Euclidean distance
 #    between two points in n-dimensional space.
 
@@ -14,10 +12,7 @@ from math import sqrt
 
 def euclidean_distance(a: list[float], b: list[float]) -> float:
   """Multi-dimensional Euclidean distance metric."""
-  if len(a) != len(b):
-      raise ValueError()
-  square_diffs = [(b[i] - a[i]) ** 2 for i in range(len(a))]
-  return sqrt(sum(square_diffs))
+  pass
 
 dataset = [
      [10, 11, 12],
