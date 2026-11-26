@@ -1,1 +1,1 @@
-# test-naive-k-means
+# test-naive-k-nearest-neighbors
